@@ -8,3 +8,7 @@ def index(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def index(request):
+    app_name = 'article'
+    return render(request, 'articles/index.html', context = {'app_name':app_name})
